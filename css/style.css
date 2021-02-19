@@ -14,7 +14,7 @@ body
 
 
 /* Heder */
-#homeFullScreens {
+#homeFullScreen {
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -22,12 +22,12 @@ body
     background-position: top center;
 }
 
-#homeFullScreens {
-    background-image: url('../images/header.png');
+#homeFullScreen {
+    background-image: url('../images/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg');
     overflow: hidden;
 }
 
-#homeFullScreens {
+#homeFullScreen {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
