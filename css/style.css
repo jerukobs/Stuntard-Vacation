@@ -27,7 +27,7 @@ body
     overflow: hidden;
 }
 
-#homeFullScreen {
+#homeFullScreens {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
