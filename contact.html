@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+	<?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
 <head>
 <style>
 
@@ -175,21 +190,7 @@ textarea:hover {
 </style>
 </head>
 <body>
-<?php 
-                            $Msg = "";
-                            if(isset($_GET['error']))
-                            {
-                                $Msg = " Please Fill in the Blanks ";
-                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
-                            }
 
-                            if(isset($_GET['success']))
-                            {
-                                $Msg = " Your Message Has Been Sent ";
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';
-                            }
-                        
-                        ?>
 <form action="process.php" method="post" id="form" class="topBefore" data-netlify="true">
 		
 		  <input id="name" type="text" name="UName" placeholder="NAME">
