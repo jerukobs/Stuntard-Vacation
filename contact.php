@@ -190,7 +190,7 @@ textarea:hover {
                             }
                         
                         ?>
-<form action="process.php" method="post" id="form" class="topBefore">
+<form action="process.php" method="post" id="form" class="topBefore" data-netlify="true">
 		
 		  <input id="name" type="text" name="UName" placeholder="NAME">
 		  <input id="email" type="text" name="Email" placeholder="E-MAIL">
