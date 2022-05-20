@@ -175,13 +175,27 @@ textarea:hover {
 </style>
 </head>
 <body>
+<?php 
+                            $Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
 
-<form id="form" class="topBefore">
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
+<form action="process.php" method="post" id="form" class="topBefore">
 		
-		  <input id="name" type="text" placeholder="NAME">
-		  <input id="email" type="text" placeholder="E-MAIL">
-		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-	<a href="mailto:jerukobs@gmail.com"> <input id="submit" type="submit" value="GO!"> </a>
+		  <input id="name" type="text" name="UName" placeholder="NAME">
+		  <input id="email" type="text" name="Email" placeholder="E-MAIL">
+		  <textarea id="message" name="msg" type="text" placeholder="MESSAGE"></textarea>
+		<input id="submit" type="submit" value="GO!">
   
 </form>
 
