@@ -195,7 +195,7 @@ textarea:hover {
 		  <input id="name" type="text" name="UName" placeholder="NAME">
 		  <input id="email" type="text" name="Email" placeholder="E-MAIL">
 		  <textarea id="message" name="msg" type="text" placeholder="MESSAGE"></textarea>
-		<input id="submit" type="submit" value="GO!">
+		<input id="submit" name="btn-send" type="submit" value="GO!">
   
 </form>
 
